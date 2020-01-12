@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Defy Age | Inspiring Beauty</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Test Page</title>
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+
+  <meta name="description" content="Defy Age Spa is a cultural revolution in the way we think about eating. Food has tremendous healing power that we only need realize to transform our lives." />
+  <meta name="image" content="https://defyagespa.com/og-image.jpg" />
+  <meta content="#24E824" />
+
+  <meta itemprop="name" content="Defy Age | Inspiring Beauty" />
+  <meta itemprop="description" content="Defy Age Spa is a cultural revolution in the way we think about eating. Food has tremendous healing power that we only need realize to transform our lives." />
+  <meta itemprop="image" content="https://defyagespa.com/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Defy Age | Inspiring Beauty" />
+  <meta name="twitter:description" content="Defy Age Spa is a cultural revolution in the way we think about eating. Food has tremendous healing power that we only need realize to transform our lives." />
+  <meta id="twitterImage" name="twitter:image" content="https://defyagespa.com/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Some healthy food" />
+
+  <meta property="og:title" content="Defy Age | Inspiring Beauty" />
+  <meta property="og:description" content="Defy Age Spa is a cultural revolution in the way we think about eating. Food has tremendous healing power that we only need realize to transform our lives." />
+  <meta property="og:image" content="https://defyagespa.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:url" content="https://defyagespa.com/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900&display=swap');
+
+    :root {
+      --f: 'Source Sans Pro', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .parent-container {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-template-rows: 15fr 1fr;
+    }
+
+    .center-container {
+      display: grid;
+      align-items: stretch;
+      justify-content: stretch;
+      grid-template-areas: "main";
+    }
+
+    .background {
+      grid-area: main;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    .gradient { 
+      grid-area: main;
+      display: none;
+    }
+
+    .text-container {
+      margin: 16px;
+      font-family: var(--f);
+      grid-area: main;
+      justify-self: end;
+      align-self: center;
+      display: grid;
+      justify-items: end;
+      z-index: 10;
+    }
+
+    blockquote {
+      font-weight: 300;
+      margin-top: 24px;
+      text-align: right;
+      max-width: 370px;
+      font-size: 28px;
+    }
+
+    .text-container p {
+      margin-top: 8px;
+      font-weight: 300;
+    }
+
+    .text-container p {
+      text-align: right;
+    }
+
+    h1 {
+      color: black;
+      line-height: 0.8;
+      text-align: right;
+      font-size: 188px;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-shadow: #ED7B74 -16px 10px;
+    }
+
+    .logo {
+      width: 100%;
+    }
+
+    .bottom-bar {
+      text-align: center;
+      font-family: var(--f);
+      width: 100%;
+      height: 100%;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bottom-bar p {
+      padding: 16px;
+    }
+
+    a {
+      color: #ED7B74;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .gradient {
+        display: block;
+        z-index: 2;
+        background-color: white;
+        opacity: 0.6;
+      }
+
+      .background {
+        object-position: 20%;
+      }
+    }
+  </style>
 </head>
 <body>
-  
+  <main class="parent-container">
+    <div class="center-container">
+      <img
+        class="background"
+        src="healthy-fruit.jpg"
+        alt="Some healthy and delcious food that'd good for your body and your brain!">
+      <div class="gradient"></div>
+      <div class="text-container">
+        <img class="logo" src="logo-green.svg" alt="Defy Age Spa Company Logo">
+        <blockquote>"Let food be thy medicine and medicine be thy food."</blockquote>
+        <p>-Hippocrates</p>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <p>© Defy Age Spa 2020 | <a href="tel:317-406-0550">317-406-0550</a> | 960 E. Washington St., Indianapolis, IN 46202</p>
+    </div>
+  </main>
 </body>
 </html>
